@@ -6,21 +6,21 @@ Real Estate Price Predictor & Recommender System
 ✅ Location-aware suggestions using cosine similarity
 ✅ Modular code structure with reusable components
 
-📊 Tech Stack
+Tech Stack
 
-🧠 Machine Learning: Scikit-learn, Pandas, NumPy
+Machine Learning: Scikit-learn, Pandas, NumPy
 
-🧹 Data Cleaning: Pandas, NumPy
+Data Cleaning: Pandas, NumPy
 
-🔍 NLP Processing: CountVectorizer, TF-IDF
+NLP Processing: CountVectorizer, TF-IDF
 
-🗺️ Similarity Matching: Cosine Similarity
+Similarity Matching: Cosine Similarity
 
-🌐 Web Framework: Streamlit
+Web Framework: Streamlit
 
-📁 Model Storage: Joblib/Pickle
+Model Storage: Joblib/Pickle
 
-🔧 Deployment-Ready: GitHub + Streamlit 
+Deployment-Ready: GitHub + Streamlit 
 📂 Project Structure
 
 Real-State-price-Predictor-and-recommendation-System/
