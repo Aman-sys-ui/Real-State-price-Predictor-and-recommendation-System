@@ -1,89 +1,95 @@
-Real Estate Price Predictor & Recommender System
-🚀 Features
-✅ Real-time Price Prediction using trained ML pipeline
-✅ Content-Based Property Recommender based on user inputs
-✅ Streamlit Web App with clean and interactive UI
-✅ Location-aware suggestions using cosine similarity
-✅ Modular code structure with reusable components
+# 🏠 Real Estate Price Predictor & Recommender System
 
-Tech Stack
+An **end-to-end Machine Learning + Streamlit project** that predicts property prices and recommends similar listings based on user preferences. It combines real-time prediction with a content-based recommendation engine to enhance user experience for property buyers.
 
-Machine Learning: Scikit-learn, Pandas, NumPy
+---
 
-Data Cleaning: Pandas, NumPy
+## 🚀 Features
+Real-time price prediction using a trained ML pipeline  
+Content-based property recommender based on user input  
+Streamlit web app with a clean and interactive UI  
+Location-aware suggestions using cosine similarity  
+Modular and reusable code structure  
 
-NLP Processing: CountVectorizer, TF-IDF
+---
 
-Similarity Matching: Cosine Similarity
+## 🛠️ Tech Stack
+- Machine Learning: scikit-learn, pandas, numpy  
+- Data Cleaning: pandas, numpy  
+- NLP Processing: CountVectorizer, TF-IDF  
+- Similarity Matching: Cosine Similarity  
+- Web Framework: Streamlit  
+- Model Storage: Joblib / Pickle  
+- Deployment: GitHub + Streamlit  
 
-Web Framework: Streamlit
+---
 
-Model Storage: Joblib/Pickle
+## 📂 Project Structure
+Real-State-price-Predictor-and-recommendation-System/  
+├── app.py → Main Streamlit app  
+├── predict.py → Price prediction logic  
+├── recommend.py → Property recommender logic  
+├── preprocess.py → Data cleaning & preprocessing functions  
+├── pipeline.pkl → Trained ML pipeline (downloaded externally)  
+├── data/  
+│   └── cleaned_data.csv → Cleaned property dataset  
+├── static/  
+│   └── banner.png → App logo or banner image  
+├── requirements.txt → Python dependencies  
+└── README.md → Project documentation  
 
-Deployment-Ready: GitHub + Streamlit 
-📂 Project Structure
+---
 
-Real-State-price-Predictor-and-recommendation-System/
-├── app.py                   # Main Streamlit app
+## How It Works
+1️. User selects property details (location, area, BHK, etc.)  
+2️. The ML pipeline preprocesses the input and predicts the property price.  
+3️. The system finds similar listings using text + location similarity (cosine similarity).  
+4️. The app displays the predicted price and top property recommendations.  
 
-├── predict.py               # Price prediction logic
+---
 
-├── recommend.py             # Recommender logic
+## 🔧 Setup Instructions
+1️. **Clone the Repository**  
+git clone https://github.com/Aman-sys-ui/Real-State-price-Predictor-and-recommendation-System.git  
+cd Real-State-price-Predictor-and-recommendation-System  
 
-├── preprocess.py            # Data cleaning / processing
+2️. **Install Dependencies**  
+pip install -r requirements.txt  
 
-├── pipeline.pkl             # (Stored externally, loaded via gdown)
+3️. **Download the ML Model (pipeline.pkl)**  
+import gdown  
+gdown.download("https://drive.google.com/uc?id=YOUR_FILE_ID", "pipeline.pkl", quiet=False)  
 
-├── data/
+4️. **Run the Streamlit App**  
+streamlit run app.py  
 
-│   └── cleaned_data.csv     # Cleaned property dataset
+---
 
-├── static/
+## ✅ Future Enhancements
+- Add filters for price range, furnishing, etc.  
+- Use geospatial distance for smarter location matching  
+- Integrate map visualization using Folium or Leaflet  
+- Deploy on Streamlit Cloud or Hugging Face Spaces  
 
-│   └── banner.png           # App image/logo
+---
 
-├── requirements.txt         # Python dependencies
+## 🤝 Contributing
+1️⃣ Fork this repository  
+2️⃣ Create a new feature branch  
+3️⃣ Commit and push your changes  
+4️⃣ Submit a Pull Request  
 
-└── README.md                # This file
-🧠 How It Works
-1. User selects features (location, area, BHK, etc.)
-2. ML pipeline preprocesses input and predicts the price.
-3. App fetches similar listings using text + location similarity.
-4. Outputs predicted price + top recommendations.
-🔧 Setup Instructions
-⚙️ 1. Clone this repo:
-   git clone https://github.com/Aman-sys-ui/Real-State-price-Predictor-and-recommendation-System.git
-   cd Real-State-price-Predictor-and-recommendation-System
+---
 
-📦 2. Install dependencies:
-   pip install -r requirements.txt
+## 📜 License
+This project is licensed under the **MIT License**.
 
-📥 3. Download the ML model (pipeline.pkl):
-   import gdown
-   gdown.download("https://drive.google.com/uc?id=YOUR_FILE_ID", "pipeline.pkl", quiet=False)
+---
 
-▶️ 4. Run the Streamlit app:
-   streamlit run app.py
+## 👨‍💻 Author
+**Aman**  
+GitHub: https://github.com/Aman-sys-ui  
 
+---
 
-✅ Future Enhancements
-• Add filters for price range, furnishing, etc.
-• Use Geospatial Distance for smarter location matching
-• Integrate Map View using Folium or Leaflet
-• Deploy on Streamlit Cloud or Hugging Face Spaces
-
-🤝 Contributing
-1. Fork this repo
-2. Create a feature branch
-3. Push and submit a PR
-
-📜 License
-
-This project is licensed under the MIT License.
-👨‍💻 Author
-
-Aman - GitHub: https://github.com/Aman-sys-ui
-
-⭐
-
-If you like this project, give it a star!
+⭐ If you like this project, please give it a star!
